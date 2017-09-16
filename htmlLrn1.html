@@ -25,5 +25,24 @@
             but its helping me understand how HTML works and
             how to markup my content.
         </p>
+        <button id = "color">Change Color!</button>
+        <script>
+            document.getElementById('color').onclick = changeColor;
+
+            var currentColor = "red";
+
+            function changeColor() {
+                if(currentColor == "red") {
+                    document.body.style.color = "green";
+                    currentColor = "green";
+                } else {
+                    document.body.style.color = "red";
+                    currentColor = "red";
+                }
+                return currentColor;
+            }
+
+        </script>
     </body>
 </html>
+
