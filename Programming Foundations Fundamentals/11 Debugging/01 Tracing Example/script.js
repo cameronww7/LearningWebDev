@@ -1,36 +1,29 @@
 // define several functions
 function firstFunction() {
-    var a = 5;
-    var b = 10;
     secondFunction();
-    var c = a + b;
+    alert(" Im in 1");
 }
 function secondFunction() {
-    var message;
-    message = "Hello";
     thirdFunction();
+    alert(" Im in 2");
 }
 function thirdFunction() {
-    var i = 0;
-    var total = 0;
-
-    while ( i < 100 ) {
-        total = total + 100;
-        i++;
-    }   
-  
-    fourthfunction();
+    fourthFunction(); // had a typo
+    alert(" Im in 3");
 }
 function fourthFunction() {
     headline.innerHTML = "You clicked the headline!";
+    alert(" Im in 4");
 }
 
 // grab the headline element
-
+// alert(" Im here");
 var headline = document.getElementById("mainHeading");
 // add a click event handler
 headline.onclick = function() {
+    // alert(" Im before first");
     firstFunction();
+    // alert(" Im here");
 };
 
 
