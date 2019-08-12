@@ -11,36 +11,17 @@ h1 {
 }
 */
 
-.firstDiv{
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity */
+/* https://designshack.net/articles/css/what-the-heck-is-css-specificity/ */
+
+li{
+  color: red;
+}
+
+.topitems{
   color: blue;
 }
 
-.secondtDiv{
-  color: red;
-}
-
-#singledout{
-  color: green;
-  text-decoration: line-through;
-}
-
-/*
-*{
-  color:black;
-}
-*/
-
-/* https://www.w3schools.com/cssref/css_selectors.asp */
-
-h3 + ul{
-  border: 4px dotted purple;
-}
-
-li a{
-  color: red;
-}
-
-li a[href="www.npr.org"]{
-  color:blue;
-  border: 5px solid orange;
+#two{
+  border: 3px solid black;
 }
