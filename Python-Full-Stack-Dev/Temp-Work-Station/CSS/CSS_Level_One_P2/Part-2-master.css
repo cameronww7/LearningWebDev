@@ -10,3 +10,24 @@ h1 {
   color: blue;
 }
 */
+body{
+  background-color: url(https://upload.wikimedia.org/wikipedia/commons/f/fe/Exmoor_forest.jpg);
+  background-repeat: repeat;
+}
+
+div{
+  background-color: green;
+  border-color: white;
+  border-width: 5px;
+  border-style: dotted;
+
+}
+
+p{
+  color: white
+}
+
+span{
+  background: red;
+  color: black;
+}
