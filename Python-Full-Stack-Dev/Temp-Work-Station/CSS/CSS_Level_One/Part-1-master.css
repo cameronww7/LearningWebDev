@@ -1,0 +1,23 @@
+/* This is a comment!   */
+
+/* selected tag{
+  property: value;
+} */
+
+/* h1 = Tag */
+h1 {
+  /* Color = Property & blue = value*/
+  color: blue;
+}
+
+li {
+  color: rgb(255, 97, 0);
+}
+
+p{
+  color: #0895a8;
+}
+
+h4{
+  color: rgba(255, 50, 0, .5);
+}
