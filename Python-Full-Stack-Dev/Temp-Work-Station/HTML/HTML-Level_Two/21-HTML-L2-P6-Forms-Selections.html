@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback Form</title>
+  </head>
+  <body>
+
+    <form method="get">
+<!-- How to Create Buttons -->
+      <h2>Are you inside the US? or Outside the US?</h2>
+      <label for="inUSA">Inside: </label>
+        <input id="inUSA" type="radio" name="loc" value="inside">
+
+        <label for="outUSA">Outside: </label>
+        <input id="outUSA" type="radio" name="loc" value="outside">
+
+<!-- How to create Options -->
+        <h2>How was your Service</h2>
+        <select name="stars">
+          <option value="Great">3</option>
+          <option value="Okay">2</option>
+          <option value="Bad">1</option>
+        </select>
+
+<!-- Create a select area -->
+        <h2>Any Other Feedback</h2>
+        <textarea name="mytext" row="8" cols="80"></textarea>
+
+        <input type="submit" name="" value="SUBMIT">
+
+    </form>
+
+
+  </body>
+</html>
