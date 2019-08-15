@@ -1,0 +1,36 @@
+h1{
+  text-align: center;
+  font-family: 'AlexBrushRegular';
+  font-weight: normal;
+  font-style: normal;
+}
+
+td{
+  height: 300px;
+  width: 150px;
+  border: 6px solid white
+}
+
+.table{
+  margin: auto;
+}
+
+#td1{
+  background-color: #333745
+}
+
+#td2{
+  background-color: #E63462
+}
+
+#td3{
+  background-color: #FE5F55
+}
+
+#td4{
+  background-color: #C7EFCF
+}
+
+#td5{
+  background-color: #EEF5DB
+}
