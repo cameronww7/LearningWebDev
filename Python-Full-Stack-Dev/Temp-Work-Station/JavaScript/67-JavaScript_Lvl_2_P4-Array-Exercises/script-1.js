@@ -10,22 +10,20 @@ var roster = []
 // ADD A NEW STUDENT
 // Create a function called addNew that takes in a name
 // and uses .push to add a new student to the array
-function addNew(roster) {
-  var tempNewStudent = prompt("Enter the New Student Name")
-  return roster.push(tempNewStudent);
+function addNew() {
+  var tempNewStudent = prompt("Enter the New Student Name");
+  roster.push(tempNewStudent);
 }
 
 // REMOVE STUDENT
 // Create a function called remove that takes in a name
 // Finds its index location, then removes that name from the roster
+// HINT: http://stackoverflow.com/questions/5767325/how-to-remove-a-particular-element-from-an-array-in-javascript
 function remove() {
   var nameToRemove = prompt("What name would you like to remove?");
   var index = roster.indexOf(nameToRemove);
   roster.splice(index,1)
 }
-
-// HINT: http://stackoverflow.com/questions/5767325/how-to-remove-a-particular-element-from-an-array-in-javascript
-//
 
 // DISPLAY ROSTER
 function display() {
