@@ -14,30 +14,25 @@
 // some condition is true then execute the code inside of the curly brackets.
 // For example, let's say we have two variables, hot and temp. Imagine that hot
 // starts off as false and temp is some number in degrees. If the temp is
-// greater than 80 than we want to assign hot = true.
+// greater than 80 than we want to assign isHot = true.
 
 // Let's see this in action:
 
-var hot = false;
+var isHot = false;
 var temp = 60;
 
-
-if (temp > 80){
-    hot = true;
-
+if (temp > 80) {
+    isHot = true;
 }
 console.log(hot)
 
 // Set temp higher
 var temp = 100;
 
-if (temp > 80){
-    hot = true;
-
+if (temp > 80) {
+    isHot = true;
 }
-
 console.log(hot);
-
 
 //////////////////////
 
@@ -51,15 +46,13 @@ console.log(hot);
 //   // Code to execute if above was not true
 // }
 
-
 temp = 30;
 
-if (temp > 90){
+if (temp > 90) {
     console.log("Hot outside!");
-} else{
+} else {
     console.log("Its not too hot today!");
 }
-
 
 // ELSE IF ///
 // What if we wanted more options to print out, rather than just two, the if
@@ -71,13 +64,13 @@ if (temp > 90){
 temp = 75;
 // temp = 30
 
-if (temp > 80){
+if (temp > 80) {
     console.log("Hot outside!");
-} else if(temp <= 80 && temp >= 50){
+} else if(temp <= 80 && temp >= 50) {
     console.log('Nice outside!');
-} else if(temp <= 50 && temp >= 32){
+} else if(temp <= 50 && temp >= 32) {
     console.log("Its cooler outside!");
-} else{
+} else {
     console.log("Its really cold outside!");
 }
 
@@ -90,12 +83,11 @@ var cheese = 10;
 // Report to HQ
 var report = 'blank';
 
-if(ham >= 10 && cheese >= 10){
+if (ham >= 10 && cheese >= 10) {
     report = "Strong sales of both items";
-
-}else if(ham === 0 && cheese === 0){
+} else if (ham === 0 && cheese === 0) {
     report = "Nothing sold!";
-}else{
+} else {
     report = 'We had some sales';
 }
 console.log(report);
