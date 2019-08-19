@@ -62,10 +62,12 @@ function monkeyTrouble(xSmileA, xSmileB) {
 function stringTimes(xString, xNum) {
     var returnStr = '';
     var index = 0;
+
     while (index < xNum) {
         returnStr += xString;
         index++;
     }
+
     return returnStr;
 }
 
@@ -83,17 +85,19 @@ function stringTimes(xString, xNum) {
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
                   // a ,   b  ,   c
-function luckySum(xNum1, xNum2, xNum3){
-
-  if(xNum1 == 13){
+function luckySum(xNum1, xNum2, xNum3) {
+  if (xNum1 == 13) {
     return 0
   }
-  if(xNum2 == 13){
+
+  if (xNum2 == 13) {
     return xNum1
   }
-  if(xNum2 == 13){
+
+  if (xNum2 == 13) {
     return xNum1 + xNum3
   }
+
   return xNum1 + xNum2 + xNum3
 }
 
@@ -112,15 +116,16 @@ function luckySum(xNum1, xNum2, xNum3){
 // caught_speeding(65, true) → 0
 
 function caught_speeding(xSpeed, xIsBirthday){
-  if(xIsBirthday){
+  if (xIsBirthday) {
     xSpeed -= 5
   }
 
-  if(xSpeed <= 60){
+  if (xSpeed <= 60) {
       return 0
   }
+
   // Optional: (60 < speed && speed <=80)
-  if(60 < xSpeed <= 80){
+  if (60 < xSpeed <= 80) {
     return 1
   }
 
@@ -141,6 +146,6 @@ function caught_speeding(xSpeed, xIsBirthday){
 // makeBricks(3, 1, 9) → false
 // makeBricks(3, 2, 10) → true
 
-function makeBricks(xSmall, xBig, xGoal){
+function makeBricks(xSmall, xBig, xGoal) {
   return xGoal%5 >= 0 && xGoal%5 - xSmall <= 0 && xSmall + 5*xBig >= xGoal
 }
