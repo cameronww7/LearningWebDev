@@ -1,29 +1,37 @@
-// Let's type this into the console, follow along with the video lecture
+// Alright so we've discussed the way you can grab html elements, let's
+// see how we can interact with them in Javascript!
 
-var x = document.querySelector("p")
+// Type this into your console:
 
-// Show Text
-x.textContent
+// Grab the Header with h1
+var header = document.querySelector("h1")
 
-// Reassign Text
-x.textContent = "new"
+// Then you can interface with the object.
 
-// Refresh the page
-// Show actual HTML
-x.innerHTML
+// Interface with the style.
+//You will see a ton of options show up!
+header.style.color = 'red'
 
-// Edit HTML
-x.innerHTML = "This is <strong>BOLD</strong>"
+// Now let's connect it to the script to
+// change it once every second to a random color!
 
-// Can't do that with just textContent
+// Random Color Function:
 
-/////////////////
-// Attributes //
-///////////////
+// http://stackoverflow.com/questions/1484506/random-color-generator-in-javascript
+function getRandomColor(){
+  var letters = "0123456789ABCDEF";
+  var color = '#';
+  for (var i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random()*16)];
+  }
+  return color
+}
 
-var special = document.querySelector("#special")
-var specialA = y.querySelector("a")
+// Simple function for clarity
+function changeHeaderColor(){
+  colorInput = getRandomColor()
+  header.style.color = colorInput;
+}
 
-specialA.getAttribute("href")
-
-specialA.setAttribute("href","https://www.amazon.com")
+// Now perform the action over intervals (milliseocnds):
+setInterval("changeHeaderColor()",500);
