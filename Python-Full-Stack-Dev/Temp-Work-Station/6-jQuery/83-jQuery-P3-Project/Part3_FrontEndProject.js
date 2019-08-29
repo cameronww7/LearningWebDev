@@ -99,7 +99,7 @@ function gameEnd(winningPlayer) {
     for (var row = 0; row < 7; row++) {
       $('h3').fadeOut('fast');
       $('h2').fadeOut('fast');
-      $('h1').text(winningPlayer+" has won! Refresh your browser to play again!").css("fontSize", "50px")
+      $('h1').text(winningPlayer + " has won! Refresh your browser to play again!").css("fontSize", "50px")
     }
   }
 };
@@ -110,7 +110,7 @@ var currentName = player1;
 var currentColor = player1Color;
 
 // Start with Player One
-$('h3').text(player1+": it is your turn, please pick a column to drop your blue chip.");
+$('h3').text(player1 + ": it is your turn, please pick a column to drop your blue chip.");
 
 $('.board button').on('click',function() {
 
@@ -134,11 +134,11 @@ $('.board button').on('click',function() {
   // Re-Check who the current Player is.
   if (currentPlayer === 1) {
     currentName = player1;
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your blue chip.");
+    $('h3').text(currentName + ": it is your turn, please pick a column to drop your blue chip.");
     currentColor = player1Color;
   } else {
     currentName = player2
-    $('h3').text(currentName+": it is your turn, please pick a column to drop your red chip.");
+    $('h3').text(currentName + ": it is your turn, please pick a column to drop your red chip.");
     currentColor = player2Color;
   }
 
