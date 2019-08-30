@@ -36,7 +36,8 @@
 
 
 # Be careful with quotes!
-' I'm using single quotes, but will create an error'
+### Commented out Cause it Causes an Error
+#' I'm using single quotes, but will create an error'
 
 
 # The reason for the error above is because the single quote in I'm stopped the
@@ -91,33 +92,33 @@ s = 'Hello World'
 s
 
 # Print the object
-print(s)
+print("\ns - " + s)
 
 
 # Let's start indexing!
 
 # Show first element (in this case a letter)
-s[0]
+print("\ns[0] - " + s[0])
 
 # Next element
-s[1]
+print("\ns[1] - " + s[1])
 
 # Next Element
-s[2]
+print("\ns[2] - " + s[2])
 
 
 # We can use a : to perform *slicing* which grabs everything
 # up to a designated point. For example:
 
 # Grab everything past the first term all the way to the length of s which is len(s)
-s[1:]
+print("\ns[1:] - " + s[1:])
 
 
 # Note that there is no change to the original s
-s
+print("\ns - " + s)
 
 # Grab everything UP TO the 3rd index
-s[:3]
+print("\ns[:3] - " + s[:3])
 
 
 # Note the above slicing. Here we're telling Python to grab everything from
@@ -125,29 +126,31 @@ s[:3]
 # Python, where statements and are usually in the context of "up to, but not including".
 
 #Everything
-s[:]
+print("\ns[:] - " + s[:])
 
 
 # We can also use negative indexing to go backwards.
 # Last letter (one index behind 0 so it loops back around)
-s[-1]
+print("\ns[-1] - " + s[-1])
 
 # Grab everything but the last letter
-s[:-1]
+print("\ns[:-1] - " + s[:-1])
 
+# Grab everything but the last letter
+print("\ns[:-2] - " + s[:-2])
 
 # We can also use index and slice notation to grab elements of a sequence by a
 # specified step size (the default is 1). For instance we can use two colons in
 # a row and then a number specifying the frequency to grab elements. For example:
 
 # Grab everything, but go in steps size of 1
-s[::1]
+print("\ns[::1] - " + s[::1])
 
 # Grab everything, but go in step sizes of 2
-s[::2]
+print("\ns[::2] - " + s[::2])
 
 # We can use this to print a string backwards
-s[::-1]
+print("\ns[::-1] - " + s[::-1])
 
 
 # ## String Properties
@@ -158,7 +161,8 @@ s[::-1]
 s
 
 # Let's try to change the first letter to 'x'
-s[0] = 'x'
+### Commented out Cause it Causes an Error
+#s[0] = 'x'
 
 
 # Notice how the error tells us directly what we can't do,
@@ -173,7 +177,7 @@ s + ' concatenate me!'
 # We can reassign s completely though!
 s = s + ' concatenate me!'
 
-print(s)
+print("\ns - " + s)
 
 # We can use the multiplication symbol to create repetition!
 
@@ -199,17 +203,20 @@ letter*10
 # Here are some examples of built-in methods in strings:
 
 # Upper Case a string
-s.upper()
+print("\ns.upper() - " + s.upper())
 
 # Lower case
-s.lower()
+print("\ns.lower() - " + s.lower())
 
 # Split a string by blank space (this is the default)
-s.split()
+tempp = s.split();
+print("\ns.split() - ")
+print(tempp)
 
 # Split by a specific element (doesn't include the element that was split on)
-s.split('W')
-
+tempp = s.split('W')
+print("\ns.split('W') - ")
+print(tempp)
 # There are many more methods than the ones covered here.
 
 ########################
