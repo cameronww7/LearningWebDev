@@ -101,6 +101,12 @@ l.append('append me!')
 # Show
 print("\nl - " + l.__str__())
 
+# extend
+l.extend('extend me!')
+
+# Show
+print("\nl - " + l.__str__())
+
 # Use "pop" to "pop off" an item from the list. By default pop takes off the last
 # index, but you can also specify which index to pop off. Let's see an example:
 
@@ -159,7 +165,7 @@ lst_2=[4,5,6]
 lst_3=[7,8,9]
 
 # Make a list of lists to form a matrix
-matrix = [lst_1,lst_2,lst_3]
+matrix = [lst_1, lst_2, lst_3]
 
 # Show
 print("\nmatrix - " + matrix.__str__())
