@@ -195,7 +195,9 @@ print(out)
 
 
 # Written in List Comprehension Form
-[item**2 for item in x]
+out2= [item**2 for item in x]
+
+print(out2)
 
 # List Comprehension is a great tool, but remember its not always approriate for
 # every situation, don't sacrafice readability for a list Comprehension. It's
