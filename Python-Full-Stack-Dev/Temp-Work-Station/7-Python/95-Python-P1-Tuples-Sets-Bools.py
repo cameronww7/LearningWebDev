@@ -60,13 +60,13 @@ t.count('one')
 
 # It can't be stressed enough that tuples are immutable.
 # To drive that point home:
-
-t[0]= 'change'
+# Commented out cause it will cause an ERROR
+#t[0]= 'change'
 
 # Because of this immutability, tuples can't grow.
 # Once a tuple is made we can not add to it.
-
-t.append('nope')
+# Commented out cause it will cause an ERROR
+#t.append('nope')
 
 ############################
 ### When to use Tuples #####
@@ -133,7 +133,7 @@ x
 l = [1,1,2,2,3,4,5,6,1,1]
 
 # Cast as set to get unique values
-set(l)
+print(set(l))
 
 ##########################
 ######## Booleans ########
