@@ -30,7 +30,7 @@ print(my_list)
 
 # Just like strings, the len() function will tell you how
 # many items are in the sequence of the list.
-print("\nlen(my_list) - " + len(my_list))
+print("\nlen(my_list) - " + len(my_list).__str__())
 
 
 ##############################
@@ -41,24 +41,24 @@ print("\nlen(my_list) - " + len(my_list))
 # remind ourselves of how this works:
 my_list = ['one','two','three',4,5]
 
-print("\nmy_list - " + my_list)
+print("\nmy_list - " + my_list.__str__())
 
 # Grab element at index 0
-print("\nmy_list[0] - " + my_list[0])
+print("\nmy_list[0] - " + my_list[0].__str__())
 
 # Grab index 1 and everything past it
-print("\nmy_list[1:] - " + my_list[1:])
+print("\nmy_list[1:] - " + my_list[1:].__str__())
 
 # Grab everything UP TO index 3
-print("\nmy_list[:3] - " + my_list[:3])
+print("\nmy_list[:3] - " + my_list[:3].__str__())
 
 # We can also use + to concatenate lists, just like we did for strings.
 my_list + ['new item']
-print("\nmy_list + ['new item'] - " + my_list)
+print("\nmy_list + ['new item'] - " + my_list.__str__())
 
 # Note: This doesn't actually change the original list!
 
-print("\nmy_list - " + my_list)
+print("\nmy_list - " + my_list.__str__())
 
 # You would have to reassign the list to make the change permanent.
 
@@ -66,15 +66,15 @@ print("\nmy_list - " + my_list)
 # Reassign
 my_list = my_list + ['add new item permanently']
 
-print("\n - " + my_list)
+print("\n - " + my_list.__str__())
 
 # We can also use the * for a duplication method similar to strings:
 
 # Make the list double
-print("\n - " + my_list * 2)
+print("\n - " + (my_list * 2).__str__())
 
 # Again doubling not permanent
-print("\nmy_list - " + my_list)
+print("\nmy_list - " + my_list.__str__())
 
 
 #############################
@@ -92,23 +92,23 @@ print("\nmy_list - " + my_list)
 # Create a new list
 l = [1,2,3]
 
-print("\nl - " + l)
+print("\nl - " + l.__str__())
 # Use the .append() method to permanently add an item to the end of a list:
 
 # Append
 l.append('append me!')
 
 # Show
-print("\nl - " + l)
+print("\nl - " + l.__str__())
 
 # Use "pop" to "pop off" an item from the list. By default pop takes off the last
 # index, but you can also specify which index to pop off. Let's see an example:
 
 # Pop off the 0 indexed item
 l.pop(0)
-print("\nl.pop(0) - " + l)
+print("\nl.pop(0) - " + l.__str__())
 # Show
-print("\nl - " + l)
+print("\nl - " + l.__str__())
 
 # Assign the popped element, remember default popped index is -1
 popped_item = l.pop()
@@ -116,11 +116,12 @@ popped_item = l.pop()
 popped_item
 
 # Show remaining list
-print("\n - " + l)
+print("\n - " + l.__str__())
 
 # It should also be noted that lists indexing will return an error if there is
 # no element at that index. For example:
-l[100]
+# Commented out cause it will casue an ERRORS
+# l[100]
 
 
 # We can use the **sort** method and the **reverse** methods
@@ -129,7 +130,7 @@ l[100]
 new_list = ['a','e','x','b','c']
 
 #Show
-print("\nnew_list - " + new_list)
+print("\nnew_list - " + new_list.__str__())
 
 # Use reverse to reverse order (this is permanent!)
 new_list.reverse()
@@ -140,7 +141,7 @@ new_list
 # but for numbers it will go ascending)
 new_list.sort()
 
-print("\nnew_list - " + new_list)
+print("\nnew_list - " + new_list.__str__())
 
 
 #######################
@@ -161,7 +162,7 @@ lst_3=[7,8,9]
 matrix = [lst_1,lst_2,lst_3]
 
 # Show
-print("\nmatrix - " + matrix)
+print("\nmatrix - " + matrix.__str__())
 
 
 # Now we can again use indexing to grab elements, but now there are two levels
@@ -188,7 +189,7 @@ matrix[0][0]
 # Build a list comprehension by deconstructing a for loop within a []
 first_col = [row[0] for row in matrix]
 
-print("\nfirst_col - " + first_col)
+print("\nfirst_col - " + first_col.__str__())
 
 
 # We used list comprehension here to grab the first element of every row in the
