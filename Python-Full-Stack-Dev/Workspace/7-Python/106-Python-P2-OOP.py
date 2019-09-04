@@ -106,11 +106,12 @@ print type(x)
 
 
 class Dog():
-    def __init__(self,breed):
+    def __init__(self,breed,name):
         self.breed = breed
+        self.name = name
 
-sam = Dog(breed='Lab')
-frank = Dog(breed='Huskie')
+sam = Dog(breed='Lab',name="Joe")
+frank = Dog('Huskie',"Cameron")
 
 
 # Lets break down what we have above.The special method
@@ -143,7 +144,6 @@ frank.breed
 # We apply this logic in the following manner:
 
 class Dog():
-
     # Class Object Attribute
     species = 'mammal'
 
