@@ -187,8 +187,8 @@ class Circle():
         return self.radius * self.radius * Circle.pi
 
     # Method for resetting Radius
-    def setRadius(self, radius):
-        self.radius = radius
+    def setRadius(self, new_radius):
+        self.radius = new_radius
 
     # Method for getting radius (Same as just calling .radius)
     def getRadius(self):
@@ -200,6 +200,8 @@ c = Circle()
 c.setRadius(2)
 print 'Radius is: ',c.getRadius()
 print 'Area is: ',c.area()
+
+print(c.area())
 
 
 # Great! Notice how we used self. notation to reference attributes of the class
