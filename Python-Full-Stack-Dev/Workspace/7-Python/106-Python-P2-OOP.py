@@ -203,7 +203,6 @@ print 'Area is: ',c.area()
 
 print(c.area())
 
-
 # Great! Notice how we used self. notation to reference attributes of the class
 # within the method calls. Review how the code above works and try creating your own method
 #
@@ -220,28 +219,28 @@ print(c.area())
 #
 # Lets see an example by incorporating our previous work on the Dog class:
 
-
+# Base Class
 class Animal():
     def __init__(self):
-        print "Animal created"
+        print("Animal created")
 
     def whoAmI(self):
-        print "Animal"
+        print("Animal")
 
     def eat(self):
-        print "Eating"
+        print("Eating")
 
-
-class Dog(Animal):
+# Derived Class because this class wil inherit from Animal()
+class Dog(Animal): # Animal is needed to inherit
     def __init__(self):
         Animal.__init__(self)
-        print "Dog created"
+        print("Dog created")
 
-    def whoAmI(self):
-        print "Dog"
+    def whoAmI(self): #Overriting Base Class function
+        print("Dog")
 
-    def bark(self):
-        print "Woof!"
+    def bark(self): #Overriting Base Class function
+        print("Woof!")
 
 d = Dog()
 d.whoAmI()
@@ -281,13 +280,13 @@ class Book():
         self.author = author
         self.pages = pages
 
-    def __str__(self):
+    def __str__(self): # String reputation so when your print this class will display below
         return "Title:%s , author:%s, pages:%s " %(self.title, self.author, self.pages)
 
-    def __len__(self):
+    def __len__(self): # gives the lenth by returning pages variable
         return self.pages
 
-    def __del__(self):
+    def __del__(self): # displays that the book has been destroyed.. Shame!
         print "A book is destroyed"
 
 book = Book("Python Rocks!", "Jose Portilla", 159)
