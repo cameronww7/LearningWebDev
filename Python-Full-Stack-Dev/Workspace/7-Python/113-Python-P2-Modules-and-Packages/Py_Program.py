@@ -1,10 +1,10 @@
 ################
-# Example Three:
+# Example One:
 ################
 # Uncomment this and comment everything else to run!
 
-# import mymodule
-# mymodule.func_in_mymodule()
+ import Py_Module
+ mymodule.func_in_mymodule()
 
 ################
 # Example Two:
