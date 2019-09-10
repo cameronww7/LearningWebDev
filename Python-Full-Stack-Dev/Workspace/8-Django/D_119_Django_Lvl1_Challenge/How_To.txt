@@ -1,0 +1,52 @@
+
+-------------------------------------------
+Command:
+django-admin startproject [Project Name]
+
+Example:
+django-admin startproject temp
+-------------------------------------------
+
+
+-------------------------------------------
+This starts the application section of django
+
+Command:
+python manage.py startapp [Project name]
+
+Example:
+python manage.py startapp temp
+-------------------------------------------
+
+1. django-admin startproject D_119_Django_Lvl1_Challenge
+2. cd into the new dir
+3. python manage.py startapp second_app
+4. got to views in second app
+5. add views.py
+        from django.shortcuts import render
+        from django.http import HttpResponse
+
+        def index(request):
+            return HttpResponse("<em>My Second Project</em>")
+6. add below to url.py
+        from django.contrib import admin
+        from django.urls import path
+        from second_app import views
+
+        urlpatterns = [
+            path('', views.index, name="index"),
+            path('help/', include('appTwo.urls')),
+            path('admin/', admin.site.urls),
+        ]
+7. add below to settings.py
+        INSTALLED_APPS = [
+            'django.contrib.admin',
+            'django.contrib.auth',
+            'django.contrib.contenttypes',
+            'django.contrib.sessions',
+            'django.contrib.messages',
+            'django.contrib.staticfiles',
+            'second_app'
+        ]
+8. now Run the Project
+  python manage.py runserver
