@@ -43,10 +43,10 @@ django-admin start
 
 -------------------------------------------
 Command:
-django-admin startproject temp
+django-admin startproject [Project Name]
 
 Example:
-
+django-admin startproject temp
 -------------------------------------------
 
 -------------------------------------------
@@ -58,6 +58,8 @@ python manage.py runserver
 -------------------------------------------
 
 -------------------------------------------
+This starts the application section of django
+
 Command:
 python manage.py startapp [Project name]
 
