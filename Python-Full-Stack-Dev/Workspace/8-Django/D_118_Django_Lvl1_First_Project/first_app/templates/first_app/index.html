@@ -1,14 +1,19 @@
 <!-- 122 : Templates -->
 <!DOCTYPE html>
+<!-- load static will load static files -->
 {% load static %}
 <html>
   <head>
     <meta charset="utf-8">
+    <!-- Uses a css file in the static file location, the css file, mystyle.css -->
     <title>Django Guitar Page</title>
+    <!-- using template tagging {{}} you can insert css -->
     <link rel="stylesheet" href="{% static "first_app/css/mystyle.css" %}"/>
   </head>
   <body>
+    <!-- This Inserts an image from static folders, the images location -->
     <h1>Hi, this is a picture of Django himself!</h1>
+    <!-- using template tagging {{}} you can insert a static image -->
     <img src="{% static "first_app/images/djangoguitar.jpg" %}" alt="Uh Oh, didn't show!">
   </body>
 </html>
