@@ -14,6 +14,11 @@ import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print("\n > __file__\n > ", __file__)
+print("\n > os.path.abspath(__file__)\n > ", os.path.abspath(__file__))
+print("\n > os.path.dirname(os.path.abspath(__file__))\n > ", os.path.dirname(os.path.abspath(__file__)))
+print("\n > os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n > ", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+print("\n > BASE_DIR\n > ", BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
