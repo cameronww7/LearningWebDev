@@ -19,6 +19,7 @@ from first_app import views
 
 urlpatterns = [
     path('', views.index, name="index"),
+    # 121 : Used for urls.py in first_app to link it
     path('first_app/', include('first_app.urls')),
     path('admin/', admin.site.urls),
 ]
