@@ -15,6 +15,16 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+print("\n > __file__\n > ", __file__)
+print("\n > os.path.abspath(__file__)\n > ", os.path.abspath(__file__))
+print("\n > os.path.dirname(os.path.abspath(__file__))\n > ", os.path.dirname(os.path.abspath(__file__)))
+print("\n > os.path.dirname(os.path.dirname(os.path.abspath(__file__)))\n > ", os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+print("\n > BASE_DIR\n > ", BASE_DIR)
+
+TEMPLATE_DIR = os.path.join(BASE_DIR,"templates")
+
+print("\n > os.path.join(BASE_DIR,\"templates\")\n > ", os.path.join(BASE_DIR,"templates"))
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
@@ -54,7 +64,7 @@ ROOT_URLCONF = 'D_123_Django_Lvl1_Challenge_Template.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR,],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
