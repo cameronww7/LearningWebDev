@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Topic,Webpage,AccessRecord
+from .models import Topic,Webpage,AccessRecord # Import your models
 # Register your models here.
-admin.site.register(Topic)
-admin.site.register(Webpage)
-admin.site.register(AccessRecord)
+admin.site.register(Topic)          # Declare Models
+admin.site.register(Webpage)        # Declare Models
+admin.site.register(AccessRecord)   # Declare Models
