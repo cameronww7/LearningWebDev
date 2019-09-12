@@ -75,3 +75,22 @@ Setting up sqlite DB
     python manage.py makemigrations first_app
 4. type "python manage.py migrate" again
 -------------------------------------------
+
+-------------------------------------------
+To Make a Python shell
+
+Command:
+python manage.py shell
+-------------------------------------------
+
+-------------------------------------------
+How to interact with your new sqlite db
+
+1. python manage.py shell
+2. from first_app.models import Topic
+3. print(Topic.objects.all())
+4. add a table
+    t = Topic(top_name="Social Network")
+    t.save()
+5. quit() to exit
+-------------------------------------------
