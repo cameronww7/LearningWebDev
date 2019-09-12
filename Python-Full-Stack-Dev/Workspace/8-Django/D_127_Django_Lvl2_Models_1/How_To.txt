@@ -66,3 +66,12 @@ python manage.py startapp [Project name]
 Example:
 python manage.py startapp temp
 -------------------------------------------
+
+-------------------------------------------
+Setting up sqlite DB
+1. in models.py set up classes
+2. type python manage.py migrate
+3. type python manage.py makemigrations [App you want]
+    python manage.py makemigrations first_app
+4. type "python manage.py migrate" again
+-------------------------------------------
