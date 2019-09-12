@@ -104,3 +104,9 @@ how to create a super User
   4. enter a password
 
 -------------------------------------------
+https://faker.readthedocs.io/en/master/
+
+How to Install Fake data into sqlite db
+pip install Faker
+
+-------------------------------------------
