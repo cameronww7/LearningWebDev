@@ -94,3 +94,13 @@ How to interact with your new sqlite db
     t.save()
 5. quit() to exit
 -------------------------------------------
+
+-------------------------------------------
+how to create a super User
+
+1. python manage.py createsuperuser
+  2. enter a username
+  3. enter a email
+  4. enter a password
+
+-------------------------------------------
