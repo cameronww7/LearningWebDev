@@ -1,0 +1,68 @@
+This file will outline how to create a project
+
+-------------------------------------------
+Command:
+conda create --name [Project Environment] django
+
+Example:
+conda create --name myDjengoEnv django
+-------------------------------------------
+
+-------------------------------------------
+Command:
+conda info --envs
+
+Example:
+conda info --envs
+-------------------------------------------
+
+
+-------------------------------------------
+Command:
+activate myDjengoEnv
+
+Example:
+activate myDjengoEnv
+-------------------------------------------
+
+-------------------------------------------
+Command:
+deactivate
+
+Example:
+deactivate
+-------------------------------------------
+
+-------------------------------------------
+Command:
+django-admin start
+
+Example:
+django-admin start
+-------------------------------------------
+
+-------------------------------------------
+Command:
+django-admin startproject [Project Name]
+
+Example:
+django-admin startproject temp
+-------------------------------------------
+
+-------------------------------------------
+Command:
+python manage.py runserver
+
+Example:
+python manage.py runserver
+-------------------------------------------
+
+-------------------------------------------
+This starts the application section of django
+
+Command:
+python manage.py startapp [Project name]
+
+Example:
+python manage.py startapp temp
+-------------------------------------------
