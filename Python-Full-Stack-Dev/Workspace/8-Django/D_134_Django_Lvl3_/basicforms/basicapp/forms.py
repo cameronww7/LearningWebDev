@@ -13,16 +13,19 @@ class FormName(forms.Form):
     # Catches Bots, if a bot inspects the page they will try to Fill
     # values on the html page however this will prevent that.
     botcatcher = forms.CharField(required=False,
-                                 widget=forms.HiddenInput)
+                                 widget=forms.HiddenInput,
+                                 validators=[validators.MaxLengthValidator(0)])
+    #  validators=[validators.MaxLengthValidator(0)])
+    # This works like the function below but must easier
 
 
-    def clean_botcatcher(self):
-    """
-    Catches a bot and prevents them from submitting
-    """
-        botcatcher = self.cleaned_data['botcatcher']
-        if len(botcatcher) > 0:
-            raise forms.ValidationError("GOTCHA BOT")
+    # def clean_botcatcher(self):
+    # """
+    # Catches a bot and prevents them from submitting
+    # """
+    #     botcatcher = self.cleaned_data['botcatcher']
+    #     if len(botcatcher) > 0:
+    #         raise forms.ValidationError("GOTCHA BOT")
 
 
 
