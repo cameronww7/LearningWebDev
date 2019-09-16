@@ -9,6 +9,9 @@ from django.core import validators
 
 # Class of Form
 class FormName(forms.Form):
+    """
+    Class for Form, used to take in the data from the Form
+    """
     name         = forms.CharField()
     email        = forms.EmailField()
     verify_email = forms.EmailField(label='Enter your email again:')
@@ -35,7 +38,7 @@ class FormName(forms.Form):
 
     def clean(self):
         """
-        Cleans the data
+        Checks to make sure emails match and will clear if they dont
         """
         all_clean_data = super().clean()
 
