@@ -3,6 +3,10 @@ from django.core import validators
 
 # After creating Temple Now need to Create Forms
 
+# def check_for_z(value):
+#     if value[0].lower() != 'z':
+#         raise forms.ValidationError("Name Doesnt start with Z")
+
 # Class of Form
 class FormName(forms.Form):
     name         = forms.CharField()
