@@ -8,9 +8,11 @@ def index(request):
 def form_name_view(request):
     form = forms.FormName()
 
+    # If the request is a POST
     if request.method == 'POST':
         form = forms.FormName(request.POST)
 
+        # A valid Check
         if form.is_valid():
             # DO SOMETHING CODE
             print("VALIDATION SUCCESS!")

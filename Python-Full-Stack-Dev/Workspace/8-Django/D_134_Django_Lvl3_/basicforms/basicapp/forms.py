@@ -1,7 +1,9 @@
 from django import forms
 from django.core import validators
 
+# After creating Temple Now need to Create Forms
 
+# Class of Form
 class FormName(forms.Form):
     name         = forms.CharField()
     email        = forms.EmailField()
@@ -10,7 +12,7 @@ class FormName(forms.Form):
 
     def clean(self):
         all_clean_data = super().clean()
-        
+
         email = all_clean_data['email']
         vmail = all_clean_data['verify_email']
 
