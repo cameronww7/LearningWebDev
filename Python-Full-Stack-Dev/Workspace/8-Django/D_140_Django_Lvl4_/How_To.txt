@@ -1,0 +1,112 @@
+This file will outline how to create a project
+
+-------------------------------------------
+Command:
+conda create --name [Project Environment] django
+
+Example:
+conda create --name myDjengoEnv django
+-------------------------------------------
+
+-------------------------------------------
+Command:
+conda info --envs
+
+Example:
+conda info --envs
+-------------------------------------------
+
+
+-------------------------------------------
+Command:
+activate myDjengoEnv
+
+Example:
+activate myDjengoEnv
+-------------------------------------------
+
+-------------------------------------------
+Command:
+deactivate
+
+Example:
+deactivate
+-------------------------------------------
+
+-------------------------------------------
+Command:
+django-admin start
+
+Example:
+django-admin start
+-------------------------------------------
+
+-------------------------------------------
+Command:
+django-admin startproject [Project Name]
+
+Example:
+django-admin startproject temp
+-------------------------------------------
+
+-------------------------------------------
+Command:
+python manage.py runserver
+
+Example:
+python manage.py runserver
+-------------------------------------------
+
+-------------------------------------------
+This starts the application section of django
+
+Command:
+python manage.py startapp [Project name]
+
+Example:
+python manage.py startapp temp
+-------------------------------------------
+
+-------------------------------------------
+Setting up sqlite DB
+1. in models.py set up classes
+2. type python manage.py migrate
+3. type python manage.py makemigrations [App you want]
+    python manage.py makemigrations first_app
+4. type "python manage.py migrate" again
+-------------------------------------------
+
+-------------------------------------------
+To Make a Python shell
+
+Command:
+python manage.py shell
+-------------------------------------------
+
+-------------------------------------------
+How to interact with your new sqlite db
+
+1. python manage.py shell
+2. from first_app.models import Topic
+3. print(Topic.objects.all())
+4. add a table
+    t = Topic(top_name="Social Network")
+    t.save()
+5. quit() to exit
+-------------------------------------------
+
+-------------------------------------------
+how to create a super User
+
+1. python manage.py createsuperuser
+  2. enter a username
+  3. enter a email
+  4. enter a password
+
+-------------------------------------------
+https://faker.readthedocs.io/en/master/
+
+How to Install Fake data into sqlite db
+pip install Faker
+
+-------------------------------------------
