@@ -3,11 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Base</title>
+    <!-- This is a global href to bootstrap to expand all html pages -->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   </head>
   <body>
+    <!-- This is bootstrap Nav Bar to expand all pages -->
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <ul class="nav navbar-nav">
@@ -17,13 +19,13 @@
         </ul>
       </div>
     </nav>
+    <!-- Anything that will be called will be in a container -->
     <div class="container">
-
-
-
-    {% block body_block %}
-    {# Anything outside of this will be inherited if you use extend.#}
-    {% endblock %}
+      <!-- These are Template Tags -->
+      <!-- Block means that these are added from another HTML file -->
+      {% block body_block %}
+      {# Anything outside of this will be inherited if you use extend.#}
+      {% endblock %}
     </div>
 
 
