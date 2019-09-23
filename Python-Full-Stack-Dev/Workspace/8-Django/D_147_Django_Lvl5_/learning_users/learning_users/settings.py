@@ -15,6 +15,14 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# Builds path inside the project for Templates
+TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+
+# Builds path inside the project for Static, content I own
+STATIC_DIR =  os.path.join(BASE_DIR,'static')
+
+# Builds path inside the project for Media, content I dont own
+MEDIA_DIR =  os.path.join(BASE_DIR,'media')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
@@ -55,7 +63,7 @@ ROOT_URLCONF = 'learning_users.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR,STATIC_DIR,MEDIA_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -136,8 +144,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-# MEDIA INFORMATION:
+# For Static Files
+STATICFILES_DIRS = [STATIC_DIR]
 
+
+# MEDIA INFORMATION:
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
