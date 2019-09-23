@@ -84,6 +84,13 @@ python manage.py shell
 -------------------------------------------
 
 -------------------------------------------
+How to make makemigrations
+
+Command:
+python manage.py makemigrations basic_app
+-------------------------------------------
+
+-------------------------------------------
 How to interact with your new sqlite db
 
 1. python manage.py shell
@@ -109,4 +116,10 @@ https://faker.readthedocs.io/en/master/
 How to Install Fake data into sqlite db
 pip install Faker
 
+-------------------------------------------
+
+-------------------------------------------
+pip install Pillow
+pip install bcrypt
+pip install django[argon2]
 -------------------------------------------
