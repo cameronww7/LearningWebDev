@@ -81,10 +81,12 @@ DATABASES = {
     }
 }
 
-
+# Password validation
+# Password validation
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 
+# Password Hashers Includes, needed to use different password hashers and encrypters
 PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.Argon2PasswordHasher',
     'django.contrib.auth.hashers.BCryptSHA256PasswordHasher',
