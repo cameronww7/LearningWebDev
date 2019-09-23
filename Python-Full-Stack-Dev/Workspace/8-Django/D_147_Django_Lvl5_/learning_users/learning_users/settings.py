@@ -95,18 +95,23 @@ PASSWORD_HASHERS = [
     'django.contrib.auth.hashers.PBKDF2SHA1PasswordHasher',
 ]
 
+# Password Validation.
+# Ex: require a password lengh, or no common passwords, all kinds of information
+# More at
+# Password validation
+# https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
-    {
+    {   # Sets the minium length of 9
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
         'OPTIONS':{'min_length':9}
     },
-    {
+    {   # check for common passwords, such as password
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
-    {
+    {   # check for common passwords, such as 12345
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
